@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: ;
+    --color-link: ;
+    --color-body: ;
+
+    --font-logo: ;
+    --font-body: ;
+
+    --bg-footer: ;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navbar {
+    
+    background: rgba(0, 0, 0, 0.3); /* Cor de fundo semi-transparente */
+}
+
+/* Ajusta o carrossel para cobrir da navbar até a primeira seção */
+.carousel-container {
+    position: relative;
+    height: 100vh; /* Ocupa toda a altura visível */
+    overflow: hidden; /* Evita rolagem */
+}
+
+/* Faz o carrossel ocupar toda a altura da div */
+.carousel-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Enviar para trás */
+}
+
+/* Ajusta as imagens para cobrir a div corretamente */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Conteúdo sobreposto ao carrossel */
+.carousel-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4); /* Overlay para legibilidade */
+}
