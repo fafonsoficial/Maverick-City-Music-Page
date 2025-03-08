@@ -4,15 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
 }
 
 :root {
     --bg-color: ;
-    --color-link: ;
+    --color-link: #fff;
     --color-body: ;
-
-    --font-logo: ;
-    --font-body: ;
 
     --bg-footer: ;
 }
@@ -23,11 +22,16 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: justify;
 }
 
 .navbar {
-    
-    background: rgba(0, 0, 0, 0.3); /* Cor de fundo semi-transparente */
+    background: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+}
+
+.container .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600
 }
 
 /* Ajusta o carrossel para cobrir da navbar até a primeira seção */
@@ -65,3 +69,31 @@ main {
     color: white;
     background: rgba(0, 0, 0, 0.4); /* Overlay para legibilidade */
 }
+
+.carousel-content .home-carousel-content h1 {
+    font-size: 3rem;
+}
+
+.carousel-content .home-carousel-content p {
+    font-size: 1rem;
+}
+
+.carousel-content .playear {
+    font-size: 2.5rem;
+}
+
+.carousel-content  .playear i {
+    padding-right: 10px;
+}
+
+.carousel-content  .playear a {
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+.col-md-12 {
+    display: flex;
+    align-items: center;
+}
+
+
