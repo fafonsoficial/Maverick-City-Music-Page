@@ -43,12 +43,37 @@
             </div>
         </nav>
     </header>
+    <!-- Container do Carrossel -->
+    <div class="carousel-container">
+        <!-- Carrossel -->
+        <div id="carouselBackground" class="carousel slide carousel-fade carousel-fundo" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/image/img-3.webp" class="d-block w-100" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/image/img-3.webp" class="d-block w-100" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/image/img-3.webp" class="d-block w-100" alt="Imagem 3">
+                </div>
+            </div>
+        </div>
+
+        <!-- Conteúdo Sobreposto -->
+        <div class="carousel-content">
+            <div class="home-carousel-content">
+                <h1>Contacto</h1>
+                <a href="#saiba-mais" class="btn">Ver mais</a>
+            </div>
+        </div>
+    </div>
 
     <main>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Entre em Contato</h2>
+        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+            <div class="row w-100">
+                <div class="col-md-6 mx-auto">
+                    <h2 class="text-center">Entre em Contato</h2>
                     <form>
                         <div class="mb-3">
                             <label class="form-label">Nome</label>
@@ -62,12 +87,8 @@
                             <label class="form-label">Mensagem</label>
                             <textarea class="form-control" rows="4" placeholder="Digite sua mensagem" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
                     </form>
-                </div>
-
-                <div class="col-md-6">
-                    <img src="/image/img-albuns/img-album-2.jpg" alt="">
                 </div>
             </div>
         </div>
